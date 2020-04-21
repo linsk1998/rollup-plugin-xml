@@ -1,0 +1,30 @@
+{
+	"name": "rollup-plugin-xml",
+	"version": "1.0.0",
+	"description": "Convert .xml files to ES6 modules",
+	"main": "dist/rollup-plugin-xml.cjs.js",
+	"module": "dist/rollup-plugin-xml.esm.js",
+	"jsnext:main": "dist/rollup-plugin-xml.esm.js",
+	"scripts": {
+		"build": "rollup -c",
+		"demo": "rollup -c demo/rollup.config.js"
+	},
+	"keywords": [
+		"rollup",
+		"plugin",
+		"xml"
+	],
+	"files": [
+		"src",
+		"dist",
+		"index.d.ts",
+		"README.md"
+	],
+	"author": "linsk",
+	"license": "MIT",
+	"dependencies": {
+		"@rollup/pluginutils": "^3.0.9",
+		"escape-string": "^1.0.2",
+		"xml-js": "^1.6.11"
+	}
+}
